@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:ital,wght@1,900&display=swap');
+
+body {
+    background-color: #333F42;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.gameHeader {
+    background-color: white;
+    width: 250px;
+    margin: 10px auto 10px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ce1126;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.scoreBoard {
+    border: 5px solid #FFB81C;
+    background-color: #EA7200;
+    height: 150px;
+    width: 350px;
+    margin: 10px auto 10px auto;
+    display: grid;
+}
+
+.scoreBoard > .scoreContainer {
+    height: 150px;
+    margin-top: -350px;
+    margin-left: 80px;
+}
+
+.scoreBoard > .scoreContainer > span > p {
+    text-align: center;
+    position: relative; 
+    display: inline-block;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 80px;
+    color: #041E42;
+}
+
+.resultsMessage{
+    background-color: #324F63;
+    font-size: 25px;
+    width: fit-content; 
+    height: fit-content;
+    text-align: center;
+    color: white;
+    height: 150px;
+    width: 340px;
+    margin: 10px auto 10px auto;
+    padding: 5px 5px 15px 5px;
+    border: 5px solid white;
+}
+
+.playerIcon{
+    position: relative; 
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: #CE1126;
+    border: 2px solid white;
+    border-radius: 50%;
+    bottom: -20px;
+    left: 20px;
+    margin-bottom: 10px;
+    margin-left: -80px;
+}
+
+.playerIcon > p {
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px #131212;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cpuIcon{
+    position: relative; 
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: #CE1126;
+    border: 2px solid white;
+    border-radius: 50%;
+    bottom: 90px;
+    left: 370px;
+    margin-bottom: 100px;
+    margin-left: -80px;
+}
+
+.cpuIcon > p {
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px #131212;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.gameIcons {
+    width: 800px;
+    margin: 10px auto 10px auto;
+}
+
+.testPlayer {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 0px auto 0px 500px;
+}
+
+.testCpu {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    margin-top: -100px;
+    margin-left: 800px;
+}
+
+.rockImage {
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #FFB81C;
+    margin-left: 80px;
+    transition: border-color 0.2s;
+}
+
+.paperImage {
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #FFB81C;
+    margin-left: 80px;
+    transition: border-color 0.2s;
+}
+
+.scissorImage {
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #FFB81C;
+    margin-left: 80px;
+    transition: border-color 0.2s;
+}
+
+img:hover{
+    cursor: pointer;
+    border-color: #00539B;
+}
+
+img:active{
+    background-color: #F47A38;
+}
+
+.StartMessage {
+    margin: 25px auto 10px auto;
+    width: fit-content; 
+    height: fit-content;
+}
+
+.StartMessage > p {
+    background-color: white;
+    text-align: center;
+    font-size: 35px;
+    color: #ce1126;
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.roundMessage{
+    font-size: 25px;
+    width: fit-content; 
+    height: fit-content;
+    text-align: center;
+    margin: 15px auto 5px auto;
+    padding-bottom: 5px;
+}
+
+.highlightRoundWinner {
+    background-color: #ce1126;
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+.highlightPicks {
+   
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    height: 500px;
+    width: 600px;
+}
+
+.finalResultsMessagePlayerWins{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #F74902;
+}
+
+.finalResultsMessageCpuWins{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #CF0A2C;
+}
+
+.finalResultsMessagePlayerWins > h2 {
+    padding: 15px 5px 5px 5px;
+    text-align: center;
+}
+
+.finalResultsMessageCpuWins > h2 {
+    padding: 15px 5px 5px 5px;
+}
+
+.highlightPicks {
+    padding: 5px 5px 5px 5px;
+}
+
+.playAgainButton{
+    text-align: center;
+    height: 75px;
+    width: 280px;
+    background-color: #00539B;
+    border: 5px solid #CF0A2C;
+    margin: 25px auto 5px auto;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.playAgainButton:hover{
+    background-color: #00205B;
+}
+
+.playAgainButton > p{
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    font-size: 25px;
+    bottom: 0px;
+}
+
+.overLay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
